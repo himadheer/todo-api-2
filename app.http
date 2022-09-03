@@ -1,0 +1,34 @@
+###
+POST http://localhost:3000/todos/
+Content-Type:application/json
+
+{
+  "id": 7,
+  "todo": "LEANING FACTS",
+  "priority": "LOW",
+  "status": "TO DO",
+  "category": "HOME",
+  "dueDate": "2021-12-22"
+}
+
+###
+
+GET http://localhost:3000/todos/?category=LEARNING&priority=HIG
+
+
+
+###
+
+PUT http://localhost:3000/todos/5/
+Content-Type:application/json
+
+{
+  "category": "LEARNING"
+}
+
+###
+
+DELETE http://localhost:3000/todos/5/
+
+
+###
